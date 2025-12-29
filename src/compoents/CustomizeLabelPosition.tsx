@@ -75,24 +75,24 @@ export default function CustomizeLabelPosition() {
   const [bgImage, setBgImage] = useState<string | null>(null);
   const [dotType, setDotType] = useState<string>('classy');
   const [cornerType, setCornerType] = useState<string>('extra-rounded');
-  const [cornerDotType, setCornerDotType] = useState<string>('dot');
+  const [cornerDotType, ] = useState<string>('dot');
   
   // Label State
   const [labelEnabled, setLabelEnabled] = useState<boolean>(true);
   const [labelText, setLabelText] = useState<string>('SCAN ME');
-  const [labelSize, setLabelSize] = useState<number>(60);
+  const [labelSize, ] = useState<number>(60);
   const [labelOffset, setLabelOffset] = useState<number>(40);
   const [labelColor, setLabelColor] = useState<string>('#2563eb'); 
   const [inheritColor, setInheritColor] = useState<boolean>(false);
   const [labelSide, setLabelSide] = useState<LabelSide>('bottom'); 
 
-  const [frameEnabled, setFrameEnabled] = useState<boolean>(true);
+  const [frameEnabled, ] = useState<boolean>(true);
   const [frameType, setFrameType] = useState<'rounded' | 'wave'>('wave'); 
   const [frameStroke, setFrameStroke] = useState<number>(16);
   const [framePadding, setFramePadding] = useState<number>(80);
   
   const [logo, setLogo] = useState<string | null>(null);
-  const [logoSize, setLogoSize] = useState<number>(0.2);
+  const [logoSize, ] = useState<number>(0.2);
   const canvasRef = useRef<HTMLDivElement>(null);
   const qrCodeInstance = useRef<any>(null);
 
