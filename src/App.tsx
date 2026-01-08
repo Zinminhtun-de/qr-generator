@@ -1,16 +1,13 @@
 
 import './App.css'
-import CustomizeLabelPosition from './compoents/CustomizeLabelPosition'
-// import CustomizeQRStudioDefault from './compoents/CustomizeQRStudioDefault'
-// import CustomizeWithTemplate from './compoents/CustomizeWithTemplate'
-// import CustomizeWithTemplate from './compoents/CustomizeWithTemplate'
+import CustomizeFrameNewSetting from './compoents/CustomizeFrameNewSetting'
 
 function App() {
 
   return (
     <>
     {/* <CustomizeQRCodeWithQRStyling/> */}
-    <CustomizeLabelPosition/>
+    <CustomizeFrameNewSetting/>
     </>
   )
 }
